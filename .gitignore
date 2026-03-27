@@ -1,0 +1,11 @@
+/target/
+**/*.rs.bk
+*.log
+err.txt
+err2.txt
+check.json
+run_log.txt
+build_final.txt
+build_j1.txt
+build_mox.txt
+.DS_Store
