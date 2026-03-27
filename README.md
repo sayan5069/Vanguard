@@ -34,8 +34,19 @@ Vanguard features a custom-built GUI powered by `egui` and a proprietary vector 
 ### Launching Vanguard
 Vanguard includes optimized launch scripts for all major operating systems:
 
-- **Windows**: Double-click `Launch-Vanguard.bat` or run `.\Launch-Vanguard.ps1` in PowerShell.
-- **Linux/macOS**: Run `sh Launch-Vanguard.sh` in your terminal.
+#### Windows
+- Double-click `Launch-Vanguard.bat` or run `.\Launch-Vanguard.ps1` in PowerShell.
+
+#### Linux / macOS
+If you are on a Linux system (like Ubuntu/Debian), you may need to install the following UI dependencies first:
+```bash
+sudo apt-get install libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxkbcommon-dev libssl-dev
+```
+Then, make the launch script executable and run it:
+```bash
+chmod +x Launch-Vanguard.sh
+./Launch-Vanguard.sh
+```
 
 > [!NOTE]
 > These launchers automatically isolate the build environment to prevent file-locking issues during self-analysis.
